@@ -8,9 +8,10 @@
     <artifactId>common-utils</artifactId>
     <version>1.0.0.RELEASE</version>
     <name>common-utils</name>
-    <description>integrate some useful utils like
-        lombok, commons-lang3, commons-collections4 etc. into one
+    <description>
+        integrate some useful utils like lombok, commons-lang3, commons-collections4 etc. into one
     </description>
+    <url>https://github.com/jack90john/common-utils</url>
     <packaging>jar</packaging>
 
     <properties>
@@ -50,12 +51,7 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>11</source>
-                    <target>11</target>
-                </configuration>
+                <artifactId>maven-source-plugin</artifactId>
             </plugin>
         </plugins>
     </build>
