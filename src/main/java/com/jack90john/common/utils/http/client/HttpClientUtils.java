@@ -27,7 +27,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Map;
 
 /**
- * @apiNote 网络请求工具（封装apache-httpClient）
+ *  网络请求工具（封装apache-httpClient）
  * @author jack
  * @version 1.0.0
  * @since 2.0.0.RELEASE

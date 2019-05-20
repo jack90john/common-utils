@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.concurrent.*;
 
 /**
- * @apiNote  多任务批量执行工具
+ *   多任务批量执行工具
  * @author jack
  * @version 1.1.1
  * @since 1.1.0.RELEASE

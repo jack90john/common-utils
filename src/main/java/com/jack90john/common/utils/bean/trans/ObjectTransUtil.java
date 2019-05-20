@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * @apiNote 对象转换工具
+ *  对象转换工具
  * @author jack
  * @version 1.1.1
  * @since 1.0.0.RELEASE
