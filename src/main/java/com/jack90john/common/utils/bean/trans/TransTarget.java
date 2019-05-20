@@ -3,10 +3,10 @@ package com.jack90john.common.utils.bean.trans;
 import java.lang.annotation.*;
 
 /**
- * Description:
+ * Description: 目标对象注解
  * Designer: jack
  * Date: 2019-05-16
- * Version: 1.0.0
+ * Version: 1.1.1.RELEASE
  */
 
 @Target({ElementType.FIELD})
@@ -15,6 +15,6 @@ import java.lang.annotation.*;
 @Documented
 public @interface TransTarget {
 
-    String targetField();
+    String value();   //目标对象变量名
 
 }

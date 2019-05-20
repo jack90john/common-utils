@@ -3,10 +3,10 @@ package com.jack90john.common.utils.bean.trans;
 import java.lang.annotation.*;
 
 /**
- * Description:
+ * Description: 转换对象标志
  * Designer: jack
  * Date: 2019-05-16
- * Version: 1.0.0
+ * Version: 1.1.1.RELEASE
  */
 
 @Target({ElementType.TYPE, ElementType.METHOD, ElementType.FIELD, ElementType.CONSTRUCTOR})
@@ -15,6 +15,6 @@ import java.lang.annotation.*;
 @Documented
 public @interface BeanTrans {
 
-    String[] ignoreFields() default{};
+    String[] ignoreFields() default {};  //需要忽略的变量名
 
 }

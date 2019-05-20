@@ -6,7 +6,7 @@
 
     <groupId>com.jack90john</groupId>
     <artifactId>common-utils</artifactId>
-    <version>1.1.0.RELEASE</version>
+    <version>1.1.1.RELEASE</version>
     <name>common-utils</name>
     <description>
         integrate some useful utils like lombok, commons-lang3, commons-collections4 etc. into one
@@ -40,12 +40,6 @@
             <artifactId>fastjson</artifactId>
             <version>[1.2.58,)</version>
         </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>[1.7.26,)</version>
-        </dependency>
-
     </dependencies>
 
     <build>
@@ -63,4 +57,80 @@
             </plugin>
         </plugins>
     </build>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <name>Jack Jiang</name>
+            <email>jack90john@hotmail.com</email>
+        </developer>
+    </developers>
+    <scm>
+        <connection>scm:git@github.com:jack90john/common-utils.git</connection>
+        <developerConnection>scm:git@github.com:jack90john/common-utils.git</developerConnection>
+        <url>https://github.com/jack90john/common-utils</url>
+    </scm>
+    <profiles>
+        <profile>
+            <id>release</id>
+            <build>
+                <plugins>
+                    <!-- Source -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-source-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>jar-no-fork</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <!-- Javadoc -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>jar</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <!-- GPG -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <version>1.6</version>
+                        <executions>
+                            <execution>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+            <distributionManagement>
+                <snapshotRepository>
+                    <id>sonatype-nexus-snapshots</id>
+                    <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+                </snapshotRepository>
+                <repository>
+                    <id>sonatype-nexus-staging</id>
+                    <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+                </repository>
+            </distributionManagement>
+        </profile>
+    </profiles>
 </project>

@@ -5,10 +5,10 @@ import java.util.List;
 import java.util.concurrent.*;
 
 /**
- * Description:
+ * Description: 多任务批量执行工具
  * Designer: jack
  * Date: 2019-05-16
- * Version: 1.0.0
+ * Version: 1.1.1.RELEASE
  */
 public class ThreadUtil {
 
