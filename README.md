@@ -24,5 +24,5 @@
     <dependency>
         <groupId>com.jack90john</groupId>
         <artifactId>common-utils</artifactId>
-        <version>1.1.0.RELEASE</version>
+        <version>1.1.1.RELEASE</version>
     </dependency>
