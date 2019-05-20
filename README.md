@@ -7,7 +7,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/jack90john/rabbitMQ_client.svg?label=Fork)](https://github.com/jack90john/common-utils)
 
 
-##整合开源工具：
+## 整合开源工具：
 
     lombok（需要Ide添加lombok插件），
     commons-lang3（apache），
