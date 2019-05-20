@@ -9,7 +9,7 @@
     <version>1.1.1.RELEASE</version>
     <name>common-utils</name>
     <description>
-        integrate some useful utils like lombok, commons-lang3, commons-collections4 etc. into one
+        Provide self-made utils and integrate some useful utils like lombok, commons-lang3, commons-collections4 etc. into one
     </description>
     <url>https://github.com/jack90john/common-utils</url>
     <packaging>jar</packaging>
