@@ -18,3 +18,11 @@
 
     ObjectTransUtil：对象转换工具；
     TreadUtil：并发处理工具；
+
+## maven引入
+
+    <dependency>
+        <groupId>com.jack90john</groupId>
+        <artifactId>common-utils</artifactId>
+        <version>1.1.0.RELEASE</version>
+    </dependency>
