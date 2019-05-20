@@ -12,17 +12,19 @@
     lombok（需要Ide添加lombok插件），
     commons-lang3（apache），
     commons-collections4（apache），
-    fastjson（alibaba）
+    fastjson（alibaba），
+    httpclient（apache）
 
 ## 自制工具
 
     ObjectTransUtil：对象转换工具；
     TreadUtil：并发处理工具；
+    HttpClientUtil：通过httpclient发送Get和Post请求工具
 
 ## maven引入
 
     <dependency>
         <groupId>com.jack90john</groupId>
         <artifactId>common-utils</artifactId>
-        <version>1.1.1.RELEASE</version>
+        <version>2.0.0.RELEASE</version>
     </dependency>

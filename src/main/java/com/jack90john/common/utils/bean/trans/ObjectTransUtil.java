@@ -10,13 +10,16 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * Description: 对象转换工具
- * Designer: jack
- * Date: 2019-05-16
- * Version: 1.1.1.RELEASE
+ * @apiNote 对象转换工具
+ * @author jack
+ * @version 1.1.1
+ * @since 1.0.0.RELEASE
  */
 
 public class ObjectTransUtil {
+
+    private ObjectTransUtil() {
+    }
 
     /**
      * 转换对象方法，待转换对象需要标注{@link BeanTrans}注解
@@ -32,6 +35,7 @@ public class ObjectTransUtil {
      * @throws InstantiationException
      * @see BeanTrans
      * @see TransTarget
+     * @since 1.0.0.RELEASE
      */
     public static <K, V> V transBean(K k, Class<V> vClass) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
 

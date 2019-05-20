@@ -5,10 +5,10 @@ import java.util.List;
 import java.util.concurrent.*;
 
 /**
- * Description: 多任务批量执行工具
- * Designer: jack
- * Date: 2019-05-16
- * Version: 1.1.1.RELEASE
+ * @apiNote  多任务批量执行工具
+ * @author jack
+ * @version 1.1.1
+ * @since 1.1.0.RELEASE
  */
 public class ThreadUtil {
 
@@ -41,6 +41,7 @@ public class ThreadUtil {
      * @param sleepTime 捕获结果间隔时间，单位ms（间隔不可设置太小，如果太小易造成cpu占用100%）
      * @param <T>       返回类型
      * @return 结果List
+     * @since 1.1.0.RELEASE
      */
     public <T> List<T> submitAndWait(Executor executor, List<Callable<T>> solvers, Integer timeout, Integer sleepTime) {
         List<T> returnList = new ArrayList<>();
@@ -66,18 +67,6 @@ public class ThreadUtil {
             }
         }
         return returnList;
-    }
-
-    private ExecutorService executorService = Executors.newFixedThreadPool(10);
-
-    public <T> T execute(Callable<T> solvers) {
-        Future<T> submit = executorService.submit(solvers);
-        try {
-            return submit.get();
-        } catch (InterruptedException | ExecutionException e) {
-            e.printStackTrace();
-            return null;
-        }
     }
 
 }
