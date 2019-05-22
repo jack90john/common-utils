@@ -27,7 +27,8 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Map;
 
 /**
- *  网络请求工具（封装apache-httpClient）
+ * 网络请求工具（封装apache-httpClient）
+ *
  * @author jack
  * @version 1.0.0
  * @since 2.0.0.RELEASE
@@ -193,6 +194,7 @@ public class HttpClientUtils {
 
     /**
      * 建立httpClient
+     *
      * @return CloseableHttpClient
      * @since 2.0.0.RELEASE
      */
@@ -220,7 +222,8 @@ public class HttpClientUtils {
 
     /**
      * 构建带参数GET请求的Url
-     * @param uri uri
+     *
+     * @param uri   uri
      * @param param 参数
      * @return 完整URL
      * @since 2.0.0.RELEASE

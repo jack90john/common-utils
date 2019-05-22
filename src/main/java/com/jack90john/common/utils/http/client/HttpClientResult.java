@@ -4,7 +4,8 @@ import lombok.Data;
 import org.apache.http.Header;
 
 /**
- *   {@link HttpClientUtils}返回结果
+ * {@link HttpClientUtils}返回结果
+ *
  * @author jack
  * @version 1.0.0
  * @since 2.0.0.RELEASE
